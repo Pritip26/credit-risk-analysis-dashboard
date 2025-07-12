@@ -28,6 +28,35 @@ It covers the complete lifecycle:
 - Jupyter Notebook (for ML workflow)
 
 ---
+## 📊 Model Performance
+
+| Metric            | Score |
+|-------------------|-------|
+| ROC-AUC Score     | 0.72  |
+| Model Used        | XGBoost Classifier |
+
+#### 🔶 ROC Curve:
+![ROC Curve](roc_curve_xgb.png)
+
+The ROC Curve above demonstrates the trade-off between True Positive Rate and False Positive Rate for the credit risk classification model.  
+AUC Score of **0.72** suggests that the model has moderate capability to distinguish between risky and non-risky applicants.
+
+---
+
+> ✅ ROC-AUC Score ranges:
+> - 0.5 → No Skill  
+> - 0.7–0.8 → Acceptable  
+> - 0.8–0.9 → Excellent  
+> - 0.9+ → Outstanding  
+
+---
+
+### 📌 Notes:
+- Model trained on the given dataset with feature engineering & preprocessing.
+- XGBoost Classifier outperformed Logistic Regression based on ROC-AUC.
+
+---
+
 ## 📈 Key Visualizations:
 - KPI Cards (Total Loans, Average Income, Total Loan Amount)
 - Donut Charts (Loan Status Distribution)
